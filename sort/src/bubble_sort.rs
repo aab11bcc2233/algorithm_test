@@ -1,8 +1,10 @@
-use std::cmp::PartialOrd;
 use crate::swap;
+use std::cmp::PartialOrd;
 
 pub fn sort<T>(list: &mut [T])
-    where T: PartialOrd + Copy {
+where
+    T: PartialOrd + Copy,
+{
     let size = list.len();
 
     for i in 0..size - 1 {
